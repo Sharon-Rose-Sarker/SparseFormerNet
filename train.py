@@ -146,4 +146,6 @@ def train(model, train_loader, val_loader, criterion, optimizer, scheduler, devi
 
     return history
 
-
+start_time = time.time()
+history = train(model, train_loader, val_loader, criterion, optimizer, scheduler, device=device, num_epochs=num_epochs)
+end_time = time.time()
